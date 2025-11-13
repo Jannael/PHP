@@ -4,11 +4,14 @@
   $age = 19;
 ?>
 
+<html lang="en">
 <head>
-  <link
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
-
+  <title>1</title>
 </head>
 
 <style>
@@ -16,17 +19,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100dvh;
+    font-size: 3rem;
   }
   main {
     width: 50%;
     text-align: center;
-    height: 50%;
   }
-  p {
-    font-size: 10px;
+  h1 {
+    font-size: 6rem;
   }
-
 </style>
+
 <main>
   <section>
     <h1><?= $name; ?></h1>
