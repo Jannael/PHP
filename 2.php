@@ -44,10 +44,10 @@ define('imgUrl', './img/triangle.png')
 <main>
   <section>
     <img src="<?= imgUrl; ?>" alt="">
-    <!-- cspell:disable-next-line -->
     <article>
       <input type="number" id="height" placeholder="height">
       <input type="number" id="width" placeholder="width">
+      <!-- cspell:disable-next-line -->
       <p id="content"><?= "La altura del traingulo es: " . $height . "<br>la medida de la base es: " . $base . "<br> por tanto la altura es: " . $area ?></p>
 
       <script>
