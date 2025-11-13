@@ -12,13 +12,16 @@ $outputAge = match($age) {
   50,51,52 => "old",
   default => "idk"
 };
+
 $outputAge = match(true) {
   $age < 10 => "baby",
   $age > 10 && $age < 40 => "young",
   $age > 40 => "old",
   default => "idk"
 };
+//zeabur for deploys
 ?>
+
 
 <?php if ($text) : ?>
   <h1>if</h1>
@@ -32,6 +35,14 @@ $outputAge = match(true) {
   <?= $outputAge; ?>
   <!-- its the same as <?php echo "" ?> -->
 </h1>
+
+<head>
+  <!-- Centered viewport -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
+  >
+</head>
 
 <style>
   :root {
