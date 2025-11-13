@@ -7,7 +7,7 @@ const constant = "constant";
 echo constant . "\n";
 
 // array
-$array = [1,2,3,4];
+$array = [1, 2, 3, 4];
 echo $array[0] . "\n";
 array_push($array, 5);
 array_push($array, 5);
@@ -24,7 +24,7 @@ $mySet = array_unique($array);
 print_r($mySet);
 
 // for
-for ($i = 0; $i <= 10; $i++){
+for ($i = 0; $i <= 10; $i++) {
   echo "for ", $i . "\n";
 }
 
@@ -52,8 +52,9 @@ if ($a == 10) {
 
 // function 
 // the parameter can be $myNumber as well
-function print_number(int $myNumber) {
-  echo "function ", $myNumber. "\n";
+function print_number(int $myNumber)
+{
+  echo "function ", $myNumber . "\n";
 }
 
 print_number(10);
@@ -61,18 +62,19 @@ print_number(11);
 print_number(12);
 
 // class
-class MyClass {
+class MyClass
+{
   public $name;
   public $age;
-  function __construct ($name, $age){
-    $this -> name = $name;
-    $this -> age = $age;
+  function __construct($name, $age)
+  {
+    $this->name = $name;
+    $this->age = $age;
   }
 }
 
 $myClass = new MyClass("Janna", 19);
 print_r($myClass);
-echo $myClass -> name . "\n";
+echo $myClass->name . "\n";
 $myClass->name = "secondName";
-echo $myClass -> name . "\n";
-
+echo $myClass->name . "\n";
