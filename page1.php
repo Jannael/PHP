@@ -11,7 +11,13 @@ $outputAge = match($age) {
   10,11,12 => "young",
   50,51,52 => "old",
   default => "idk"
-}
+};
+$outputAge = match(true) {
+  $age < 10 => "baby",
+  $age > 10 && $age < 40 => "young",
+  $age > 40 => "old",
+  default => "idk"
+};
 ?>
 
 <?php if ($text) : ?>
