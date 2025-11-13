@@ -1,12 +1,28 @@
+<?php
+// concat
+$text = 'str';
+$text .= ' str2';
+define('constant', 'value'); //for constants
+?>
+
+<?php if ($text) : ?>
+  <h1>if</h1>
+<?php elseif ($text): ?>
+  <h1>elseif</h1>
+<?php else: ?>
+  <h1>else</h1>
+<?php endif; ?>
+
 <h1>
-  <?= "First app"; ?> 
-  <!-- its the same as <?php echo ""?> -->
+  <?= $text; ?>
+  <!-- its the same as <?php echo "" ?> -->
 </h1>
 
 <style>
   :root {
     color-scheme: dark;
   }
+
   body {
     display: grid;
     place-content: center;
