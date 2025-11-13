@@ -5,6 +5,13 @@ $text .= ' str2';
 define('constant', 'value'); //for constants
 // ternary
 $output = 18 > 18 ? "old" : "young";
+$age = 18;
+$outputAge = match($age) {
+  0,1,2 => "baby",
+  10,11,12 => "young",
+  50,51,52 => "old",
+  default => "idk"
+}
 ?>
 
 <?php if ($text) : ?>
@@ -16,7 +23,7 @@ $output = 18 > 18 ? "old" : "young";
 <?php endif; ?>
 
 <h1>
-  <?= $output; ?>
+  <?= $outputAge; ?>
   <!-- its the same as <?php echo "" ?> -->
 </h1>
 
