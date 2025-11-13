@@ -3,6 +3,8 @@
 $text = 'str';
 $text .= ' str2';
 define('constant', 'value'); //for constants
+// ternary
+$output = 18 > 18 ? "old" : "young";
 ?>
 
 <?php if ($text) : ?>
@@ -14,7 +16,7 @@ define('constant', 'value'); //for constants
 <?php endif; ?>
 
 <h1>
-  <?= $text; ?>
+  <?= $output; ?>
   <!-- its the same as <?php echo "" ?> -->
 </h1>
 
