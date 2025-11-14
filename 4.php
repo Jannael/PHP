@@ -36,7 +36,7 @@
 
 <body>
   <!-- cspell:disable-next-line -->
-  <h1>Calculadora de avg</h1>
+  <h1>Calculadora de promedio</h1>
 
   <form method="post">
     <!-- cspell:disable-next-line -->
